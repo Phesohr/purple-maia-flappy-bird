@@ -12,7 +12,7 @@ var playState = {
         game.scale.pageAlignHorizontally = true;
         game.scale.pageAlignVertically = true;
         
-        game.stage.backgroundColor = '#800000';
+        game.stage.backgroundColor = '#8185d5';
         
         //preload pipes and player sprite
         game.load.image('bird', 'assets/images/banana.png');
@@ -44,7 +44,7 @@ var playState = {
         
         //create our jump key
         var spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-        spaceKey.input.onDown.add(this.jump, this);
+        spaceKey.onDown.add(this.jump, this);
         game.input.onDown.add(this.jump, this);
         
         this.score = 0;
@@ -124,7 +124,7 @@ var playState = {
         
         for (var i = 0; i < 10; i++) {
             if(i != hole && i != hole+1){
-                this.addPipes(400, i*65);
+                this.addPipe(400, i*65);
             }
         }
         

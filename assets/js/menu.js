@@ -6,7 +6,7 @@ var menuState = {
     
     
     preload: function() { 
-        game.load.spirtesheet('assets', 'assets/images/retry_btn.png', 193, 71);
+        game.load.spirtesheet('button', 'assets/images/retry_btn.png', 193, 71);
         
         game.pageAlignHorizontally = true;
         game.pageAlignVertically = true;
@@ -19,7 +19,7 @@ var menuState = {
         var spaceKey = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
         spaceKey.onDown.add(this.startGame, this);
         
-        text = game.add.text(110, 125, 'Score:')
+        text = game.add.text(110, 125, 'Score:');
         
         text = game.add.text(225, 125, playState.score);
     },

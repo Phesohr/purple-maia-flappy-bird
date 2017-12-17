@@ -8,7 +8,7 @@ var mainMenuState = {
     preload: function() { 
         game.load.spritesheet('startBtn', 'assets/images/start_btn.png', 193, 71);
         
-        game.stage.backgroundColor = "#B22222";
+        game.stage.backgroundColor = '#8185d5';
         game.scale.pageAlignHorizontally = true;
         game.scale.pageAlignVertically = true;
         
